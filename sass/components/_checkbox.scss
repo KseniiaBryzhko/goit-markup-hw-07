@@ -24,18 +24,18 @@
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
 
-.checkbox__input:checked + .checkbox__input--custom {
-  background-image: url(../images/icons/check.svg);
-  box-shadow: none;
-  background-size: contain;
-  background-origin: content-box;
-  background-repeat: no-repeat;
-}
+  &:checked + .checkbox__input--custom {
+    background-image: url(../images/icons/check.svg);
+    box-shadow: none;
+    background-size: contain;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+  }
 
-.checkbox__input:focus + .checkbox__input--custom {
-  box-shadow: 0 0 0 0.1em var(--accent-color);
+  &:focus + .checkbox__input--custom {
+    box-shadow: 0 0 0 0.1em var(--accent-color);
+  }
 }
 
 .checkbox__input--custom {

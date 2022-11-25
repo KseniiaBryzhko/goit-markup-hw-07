@@ -24,16 +24,16 @@
   position: relative;
   margin-bottom: 10px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.form__container:hover,
-.form__container:focus-within {
-  fill: var(--accent-color);
-}
+  &:hover,
+  &:focus-within {
+    fill: var(--accent-color);
+  }
 
-.form__container:hover .form__input,
-.form__container:focus-within .form__input {
-  border: 1px solid var(--accent-color);
+  &:hover .form__input,
+  &:focus-within .form__input {
+    border: 1px solid var(--accent-color);
+  }
 }
 
 .form__input {
@@ -63,16 +63,16 @@
   outline: 1px solid transparent;
   outline-offset: -1px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.form__comment::placeholder {
-  font-size: 12px;
-  line-height: 1.2;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 
-.form__comment:hover,
-.form__comment:focus-within {
-  border: 1px solid var(--accent-color);
+  &:hover,
+  &:focus-within {
+    border: 1px solid var(--accent-color);
+  }
 }
